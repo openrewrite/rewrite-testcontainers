@@ -55,6 +55,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
     compileOnly("com.google.code.findbugs:jsr305:${findbugsJsr305Version}")
     annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+    // TODO replace with `org.openrewrite:rewrite-bom:$rewriteVersion` once we adopt the rewrite build plugin
     implementation(platform("org.openrewrite.recipe:rewrite-recipe-bom:${rewriteBomVersion}"))
 
     implementation("org.openrewrite:rewrite-java")
